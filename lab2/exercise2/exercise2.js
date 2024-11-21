@@ -4,7 +4,7 @@ function compactObject(obj) {
             .map(compactObject)
             .filter(Boolean)
     }
-    if (obj !== null & typeof obj === 'object') {
+    if (obj !== null && typeof obj === 'object') {
         return Object.keys(obj).reduce((acc, key) =>{
             const value = compactObject(obj[key]);
             if(Boolean(value)){
