@@ -38,3 +38,4 @@ function increment(i) {
 function incrementItems(p1) { // Write this function
     return p1.map(i => increment(i));
 }
+// test
